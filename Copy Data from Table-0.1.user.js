@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy Data from Table
 // @namespace    http://tampermonkey.net/
-// @version      0.2
+// @version      0.3
 // @description  Add a button to copy data from a specific table to clipboard
 // @author       Amr
 // @match        https://balighlabldmwebapp.balighlab.com/LDM_Baligh/Pages/Registration/QSystemQueryFeesPreprations.aspx
@@ -60,9 +60,9 @@
 
         const textToCopy =
 `${data.join('\n')}
-*Total = ${total} EGP*
-- *شروط التحاليل*
-${precautions.join('\n')}`;
+*Total = ${total} EGP*`
+//- *شروط التحاليل*
+//${precautions.join('\n')}`;
         console.log('text', textToCopy);
         GM_setClipboard(textToCopy);
 
