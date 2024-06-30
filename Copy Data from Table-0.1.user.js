@@ -61,7 +61,7 @@
         const textToCopy =
 `${data.join('\n')}
 *Total = ${total} EGP*`
-//- *شروط التحاليل*
+//- *شروط التحاليل a*
 //${precautions.join('\n')}`;
         console.log('text', textToCopy);
         GM_setClipboard(textToCopy);
