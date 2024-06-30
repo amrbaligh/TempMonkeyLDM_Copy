@@ -35,7 +35,7 @@
             const service = serviceCell.textContent.trim(); // Service column (index 3)
             const cash = cashCell.textContent.trim();   // Cash column (index 7)
             total += Number(cash);
-            data.push(`${service}: ${cash}`);
+            data.push(`${service}: $*{cash} EGP*`);
 
             const regex = /serviceId=(\d+)/i;
             const match = instructionsCell.querySelector('a').getAttribute('onclick').match(regex);
@@ -60,7 +60,7 @@
 
         const textToCopy =
 `${data.join('\n')}
-*Total = ${total} EGP*`
+*Total Cash = ${total} EGP*`
 //- *شروط التحاليل*
 //${precautions.join('\n')}`;
         console.log('text', textToCopy);
