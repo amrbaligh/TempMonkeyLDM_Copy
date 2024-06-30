@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy Data from Table
 // @namespace    http://tampermonkey.net/
-// @version      0.4.1
+// @version      0.1.5
 // @description  Add a button to copy data from a specific table to clipboard
 // @author       Amr
 // @match        https://balighlabldmwebapp.balighlab.com/LDM_Baligh/Pages/Registration/QSystemQueryFeesPreprations.aspx
@@ -70,7 +70,7 @@
     });
 
         // Optionally, notify the user
-        alert('يا شباب تم نسخ البيانات بنجاح');
+        alert('تم نسخ البيانات بنجاح');
     }
 
     // Create a button element
