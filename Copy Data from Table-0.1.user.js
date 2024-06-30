@@ -7,6 +7,8 @@
 // @match        https://balighlabldmwebapp.balighlab.com/LDM_Baligh/Pages/Registration/QSystemQueryFeesPreprations.aspx
 // @grant        GM_setClipboard
 // @grant        GM.xmlHttpRequest
+// @updateURL    https://github.com/amrbaligh/TempMonkeyLDM_Copy.git
+// @downloadURL  https://github.com/amrbaligh/TempMonkeyLDM_Copy.git
 // ==/UserScript==
 
 (function() {
