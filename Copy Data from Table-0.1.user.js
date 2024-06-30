@@ -61,7 +61,7 @@
         const textToCopy =
 `${data.join('\n')}
 *Total = ${total} EGP*`
-//- *شروط التحاليل a*
+//- *شروط التحاليل*
 //${precautions.join('\n')}`;
         console.log('text', textToCopy);
         GM_setClipboard(textToCopy);
@@ -70,7 +70,7 @@
     });
 
         // Optionally, notify the user
-        alert('تم نسخ البيانات بنجاح');
+        alert('يا شباب تم نسخ البيانات بنجاح');
     }
 
     // Create a button element
