@@ -70,7 +70,7 @@ ${precautions.join('\n')}`;
     });
 
         // Optionally, notify the user
-        alert('تم نسخ البيانات بنجاح!');
+        alert('تم نسخ البيانات بنجاح');
     }
 
     // Create a button element
