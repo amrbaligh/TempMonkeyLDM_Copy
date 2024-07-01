@@ -60,6 +60,7 @@
 
         const textToCopy =
 `${data.join('\n')}
+
 *Total Cash = ${total} EGP*`
 //- *شروط التحاليل*
 //${precautions.join('\n')}`;
