@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Copy Data from Table
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.5.1
 // @description  Add a button to copy data from a specific table to clipboard
 // @author       Amr
 // @match        https://balighlabldmwebapp.balighlab.com/LDM_Baligh/Pages/Registration/QSystemQueryFeesPreprations.aspx
@@ -35,7 +35,7 @@
             const service = serviceCell.textContent.trim(); // Service column (index 3)
             const cash = cashCell.textContent.trim();   // Cash column (index 7)
             total += Number(cash);
-            data.push(`${service}: $*{cash} EGP*`);
+            data.push(`${service}: *${cash} EGP*`);
 
             const regex = /serviceId=(\d+)/i;
             const match = instructionsCell.querySelector('a').getAttribute('onclick').match(regex);
